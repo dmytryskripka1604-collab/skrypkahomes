@@ -74,10 +74,10 @@ header .btn{min-height:44px;padding:0 20px;font-size:14px}
 .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%;transform:scale(1.08);animation:kb 18s var(--ease) forwards}
 @keyframes kb{to{transform:scale(1)}}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,20,20,.35) 0%,rgba(20,20,20,0) 30%,rgba(20,20,20,0) 45%,rgba(20,20,20,.72) 100%)}
-.hero .wrap{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:clamp(48px,8vh,96px)}
+.hero .wrap{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding-top:110px;padding-bottom:clamp(40px,7vh,96px)}
 .hero .eyebrow{color:rgba(246,242,236,.85)}
-.hero h1{font-size:clamp(50px,8.6vw,138px);max-width:12ch}
-.hero .lead{font-size:clamp(17px,1.4vw,20px);max-width:46ch;margin:28px 0 38px;color:rgba(246,242,236,.9)}
+.hero h1{font-size:clamp(42px,min(8.6vw,11.5vh),138px);max-width:12ch}
+.hero .lead{font-size:clamp(16px,1.4vw,20px);max-width:46ch;margin:clamp(14px,3vh,28px) 0 clamp(20px,4vh,38px);color:rgba(246,242,236,.9)}
 .hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
 .cap{position:absolute;right:clamp(20px,4vw,56px);bottom:22px;z-index:2;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(246,242,236,.7)}
 
