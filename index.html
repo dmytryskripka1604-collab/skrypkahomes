@@ -81,6 +81,15 @@ header .btn{min-height:44px;padding:0 20px;font-size:14px}
 .hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
 .cap{position:absolute;right:clamp(20px,4vw,56px);bottom:22px;z-index:2;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(246,242,236,.7)}
 
+
+.band{position:relative;height:clamp(360px,72vh,760px);overflow:hidden;margin:0}
+.band img{width:100%;height:100%;object-fit:cover}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:clamp(56px,7vw,96px)}
+.duo figure{margin:0;position:relative;overflow:hidden;aspect-ratio:16/10;background:#222}
+.duo img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.duo figure:hover img{transform:scale(1.04)}
+.ill{position:absolute;right:12px;bottom:10px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(246,242,236,.75)}
+@media (max-width:700px){.duo{grid-template-columns:1fr}}
 /* statement */
 .statement{background:var(--ink);color:var(--paper);text-align:center}
 .statement h2{font-size:clamp(46px,8vw,128px);max-width:14ch;margin:0 auto}
@@ -242,10 +251,12 @@ footer nav a:hover{color:var(--paper)}
 <span class="cap" data-t="cap">Design concept</span>
 </section>
 
+<figure class="band rv-img rv"><img src="img/pool.jpg" alt="Infinity pool of a modern villa above the Mediterranean at sunset" loading="lazy"><span class="ill" data-t="ill">Illustrative image</span></figure>
 <section class="statement on-dark">
 <div class="wrap">
 <h2 class="rv" data-t="s_t" data-html>Not square metres. <em>A way of living.</em></h2>
 <p class="rv" data-t="s_p">A villa in Spain is mornings by the pool, evenings on the terrace and a home your family grows into. We take the land, the permits and the builders off your hands — so the only thing left for you is to live there.</p>
+<div class="duo"><figure class="rv-img rv"><img src="img/breakfast.jpg" alt="Family breakfast on a villa terrace with sea view" loading="lazy"><span class="ill" data-t="ill">Illustrative image</span></figure><figure class="rv-img rv"><img src="img/evening.jpg" alt="Couple on a villa terrace at dusk looking at the sea" loading="lazy"><span class="ill" data-t="ill">Illustrative image</span></figure></div>
 </div>
 </section>
 
@@ -283,6 +294,7 @@ footer nav a:hover{color:var(--paper)}
 <div class="stp rv"><span class="k">03</span><h3 data-t="r3t">Build</h3><p data-t="r3">Construction with Spanish contractors, fixed schedule, weekly reports.</p></div>
 <div class="stp rv"><span class="k">04</span><h3 data-t="r4t">Keys</h3><p data-t="r4">Handover, documents and support after you move in.</p></div>
 </div>
+<div class="duo"><figure class="rv-img rv"><img src="img/architect.jpg" alt="Architect reviewing villa plans on site" loading="lazy"><span class="ill" data-t="ill">Illustrative image</span></figure><figure class="rv-img rv"><img src="img/keys.jpg" alt="Keys handed over at the door of a new villa" loading="lazy"><span class="ill" data-t="ill">Illustrative image</span></figure></div>
 </div>
 </section>
 
@@ -372,7 +384,7 @@ r_e:"Як ми працюємо",r_t:"Від ділянки до ключів. �
 w_e:"Портфоліо",w_t:"Архітектура, яку ми проєктуємо.",w_l:"Концепції наших архітекторів. Кожну віллу проєктуємо під її ділянку, краєвиди й родину.",w_c:"Ваша вілла — під вашу ділянку.",w_b:"Почати з дзвінка",
 i_e:"Інвестиції",i_t:"Будуйте, <em>а не просто купуйте.</em>",i1:"Нова вілла за сучасними стандартами, а не вторинка з чужими компромісами.",i2:"Ви обираєте локацію, планування й рівень якості.",i3:"Для родини, під продаж чи оренду — рахуємо проєкт до першого витраченого євро.",
 o_e:"Засновник",o_q:"«Я в будівництві з 2003 року, з 2005-го — лише приватні будинки. У Валенсії будую так, як будував би для своєї родини.»",o_n:"Дмитро Скрипка",o_r:"Засновник Skrypka Homes",o_s1:"у будівництві з",o_s2:"збудованих об'єктів",o_s3:"лише приватні будинки",o_t:"Працюємо з архітекторами й інженерами в Іспанії та дистанційно по Європі.",
-c_e:"Контакт",c_t:"Розкажіть про свою віллу.",c_l:"Дзвінок на 20 хвилин: ваша ділянка чи ідея, бюджет і терміни. Українською, російською чи англійською.",c_a:"Офіс",c_f1:"Ім'я",c_f2:"Телефон або WhatsApp",c_f3:"Ваша ділянка чи ідея",c_b:"Надіслати у WhatsApp",pl2:"Дзвінок",pl3:"Контакт"},
+c_e:"Контакт",c_t:"Розкажіть про свою віллу.",c_l:"Дзвінок на 20 хвилин: ваша ділянка чи ідея, бюджет і терміни. Українською, російською чи англійською.",c_a:"Офіс",c_f1:"Ім'я",c_f2:"Телефон або WhatsApp",c_f3:"Ваша ділянка чи ідея",c_b:"Надіслати у WhatsApp",ill:"Ілюстрація",pl2:"Дзвінок",pl3:"Контакт"},
 ru:{n1:"Продукты",n2:"Процесс",n3:"Портфолио",n4:"Основатель",n5:"Контакт",cta:"Записаться на звонок",
 h_e:"Проектируем · Строим · Инвестируем — Валенсия",h1:"Ваш дом в Испании. <em>Под контролем.</em>",h_l:"Частные виллы от 300 м² в провинции Валенсия — от участка до ключей. Одна команда, один контакт на русском, украинском или английском.",h_b1:"Обсудить виллу",h_b2:"Все продукты",cap:"Концепция",
 s_t:"Не квадратные метры. <em>Образ жизни.</em>",s_p:"Вилла в Испании — это утро у бассейна, вечера на террасе и дом, в котором растёт ваша семья. Участок, разрешения и строителей мы берём на себя — вам остаётся только жить.",
@@ -383,7 +395,7 @@ r_e:"Как мы работаем",r_t:"От участка до ключей. �
 w_e:"Портфолио",w_t:"Архитектура, которую мы проектируем.",w_l:"Концепции наших архитекторов. Каждую виллу проектируем под её участок, виды и семью.",w_c:"Ваша вилла — под ваш участок.",w_b:"Начать со звонка",
 i_e:"Инвестиции",i_t:"Стройте, <em>а не просто покупайте.</em>",i1:"Новая вилла по современным стандартам, а не вторичка с чужими компромиссами.",i2:"Вы выбираете локацию, планировку и уровень качества.",i3:"Для семьи, под продажу или аренду — считаем проект до первого потраченного евро.",
 o_e:"Основатель",o_q:"«Я в строительстве с 2003 года, с 2005-го — только частные дома. В Валенсии строю так, как строил бы для своей семьи.»",o_n:"Дмитрий Скрипка",o_r:"Основатель Skrypka Homes",o_s1:"в строительстве с",o_s2:"построенных объектов",o_s3:"только частные дома",o_t:"Работаем с архитекторами и инженерами в Испании и удалённо по Европе.",
-c_e:"Контакт",c_t:"Расскажите о своей вилле.",c_l:"Звонок на 20 минут: ваш участок или идея, бюджет и сроки. На русском, украинском или английском.",c_a:"Офис",c_f1:"Имя",c_f2:"Телефон или WhatsApp",c_f3:"Ваш участок или идея",c_b:"Отправить в WhatsApp",pl2:"Звонок",pl3:"Контакт"}
+c_e:"Контакт",c_t:"Расскажите о своей вилле.",c_l:"Звонок на 20 минут: ваш участок или идея, бюджет и сроки. На русском, украинском или английском.",c_a:"Офис",c_f1:"Имя",c_f2:"Телефон или WhatsApp",c_f3:"Ваш участок или идея",c_b:"Отправить в WhatsApp",ill:"Иллюстрация",pl2:"Звонок",pl3:"Контакт"}
 };
 var EN={};document.querySelectorAll('[data-t]').forEach(function(e){var k=e.dataset.t;if(!(k in EN))EN[k]=e.hasAttribute('data-html')?e.innerHTML:e.textContent;});
 var cur='en';
