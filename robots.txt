@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://skrypkahomes.com/sitemap.xml
