@@ -147,6 +147,7 @@ header .btn{min-height:44px;padding:0 20px;font-size:14px}
 .invest .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,120px);align-items:start}
 .invest ol{list-style:none;padding:0;margin:0;counter-reset:i}
 .invest li{counter-increment:i;padding:26px 0;border-top:1px solid var(--stone);display:grid;grid-template-columns:56px 1fr;font-size:19px;line-height:1.45}
+.invest .i-lead{font-size:19px;line-height:1.5;margin:22px 0 6px;max-width:34ch}.invest .i-src{font-size:13px;color:#7a736b;margin:0 0 22px}.invest .btn{margin:6px 0 14px}
 .invest li::before{content:counter(i,decimal-leading-zero);font-family:var(--serif);font-size:24px;color:var(--terra)}
 
 /* founder */
@@ -227,7 +228,7 @@ footer nav a:hover{color:var(--paper)}
 <div class="wrap bar">
 <a class="logo" href="#top" aria-label="Skrypka Homes"><b>SKRYPKA</b><span><i></i><small>HOMES</small></span></a>
 <nav class="main" aria-label="Main">
-<a href="#products" data-t="n1">Products</a><a href="#process" data-t="n2">Process</a><a href="#portfolio" data-t="n3">Portfolio</a><a href="#founder" data-t="n4">Founder</a><a href="#contact" data-t="n5">Contact</a>
+<a href="#products" data-t="n1">Products</a><a href="#process" data-t="n2">Process</a><a href="#portfolio" data-t="n3">Portfolio</a><a href="#invest" data-t="n6">Invest</a><a href="#founder" data-t="n4">Founder</a><a href="#contact" data-t="n5">Contact</a>
 </nav>
 <div class="right">
 <div class="lang" role="group" aria-label="Language"><button type="button" data-l="en" aria-pressed="true">EN</button><button type="button" data-l="uk" aria-pressed="false">UA</button><button type="button" data-l="ru" aria-pressed="false">RU</button></div>
@@ -240,7 +241,7 @@ footer nav a:hover{color:var(--paper)}
 <div class="menu" id="menu" aria-hidden="true">
 <div class="top"><a class="logo" href="#top"><b>SKRYPKA</b><span><i></i><small>HOMES</small></span></a><button class="close" type="button" aria-label="Close menu" id="close">×</button></div>
 <nav>
-<a href="#products" data-t="n1">Products</a><a href="#process" data-t="n2">Process</a><a href="#portfolio" data-t="n3">Portfolio</a><a href="#founder" data-t="n4">Founder</a><a href="#contact" data-t="n5">Contact</a>
+<a href="#products" data-t="n1">Products</a><a href="#process" data-t="n2">Process</a><a href="#portfolio" data-t="n3">Portfolio</a><a href="#invest" data-t="n6">Invest</a><a href="#founder" data-t="n4">Founder</a><a href="#contact" data-t="n5">Contact</a>
 </nav>
 <div class="lang" role="group" aria-label="Language"><button type="button" data-l="en" aria-pressed="true">EN</button><button type="button" data-l="uk" aria-pressed="false">UA</button><button type="button" data-l="ru" aria-pressed="false">RU</button></div>
 <a class="btn btn-terra" href="https://wa.me/34674283908" target="_blank" rel="noopener">WhatsApp</a>
@@ -318,13 +319,18 @@ footer nav a:hover{color:var(--paper)}
 </div>
 </section>
 
-<section class="invest" style="background:var(--paper);padding-top:0">
+<section class="invest" id="invest" style="background:var(--paper)">
 <div class="wrap grid">
-<div><p class="eyebrow" data-t="i_e">Invest</p><h2 class="rv" data-t="i_t" data-html>Build, <em>don't just buy.</em></h2></div>
+<div><p class="eyebrow" data-t="i_e">Invest</p><h2 class="rv" data-t="i_t" data-html>Build, <em>don't just buy.</em></h2>
+<p class="rv i-lead" data-t="i_l">Ready-made new homes in Valencia are scarce: 189 for sale in the city today, against 784 in 2019. A villa you build is an asset you control from the plot onwards.</p>
+<p class="rv i-src" data-t="i_s">Source: UPV Observatory via Idealista, November 2026.</p>
+<a class="btn btn-terra rv" href="https://wa.me/34674283908?text=Investment%20villa%20%E2%80%94%20Skrypka%20Homes" target="_blank" rel="noopener" data-t="i_b">Discuss an investment villa</a>
+<p class="rv i-src" data-t="i_n">We don't promise returns. We show the calculation and every assumption behind it.</p></div>
 <ol>
-<li class="rv" data-t="i1">A new villa built to today's standards — not a resale with someone else's compromises.</li>
-<li class="rv" data-t="i2">You choose the location, the layout and the quality level.</li>
-<li class="rv" data-t="i3">For your family, for sale or for rental — we calculate the project before the first euro is spent.</li>
+<li class="rv" data-t="i1">Plot. We check zoning, buildability and access before you buy.</li>
+<li class="rv" data-t="i2">Numbers. Build budget and target price for sale or rental, before the first euro is spent.</li>
+<li class="rv" data-t="i3">Build. Under the founder's control, with progress online while you are abroad.</li>
+<li class="rv" data-t="i4">Exit. Sell, rent or move in: we prepare the villa for the scenario you choose.</li>
 </ol>
 </div>
 </section>
@@ -390,7 +396,7 @@ p1t:"Підбір і перевірка ділянки",p1:"Знаходимо �
 f_e:"Будівництво за кордоном",f_t:"Три страхи. Ми їх знімаємо.",f1q:"Чужа мова, чужі правила",f1t:"Дозволи й переклад — на нас",f1:"Ведемо ліцензії й мерію і пояснюємо кожен документ вашою мовою.",f2q:"Підрядники підведуть",f2t:"Одна команда — одна відповідальність",f2:"Проєкт і будівництво ведемо разом, тож ніхто не перекладає провину між архітектором і будівельником.",f3q:"Не проконтролюю на відстані",f3t:"Бачите будову, не приїжджаючи",f3:"Щотижневі звіти, зрозумілі графік і бюджет та одна людина, яка завжди відповідає.",
 r_e:"Як ми працюємо",r_t:"Від ділянки до ключів. Одна команда.",r1t:"Ділянка",r1:"Пошук, юридична й технічна перевірка, перший кошторис.",r2t:"Проєкт",r2:"Концепція, планування, візуалізації, повний проєкт і дозвіл на будівництво.",r3t:"Будівництво",r3:"Будова з іспанськими підрядниками, чіткий графік, щотижневі звіти.",r4t:"Ключі",r4:"Здача, документи й супровід після заселення.",
 w_e:"Портфоліо",w_t:"Архітектура, яку ми проєктуємо.",w_l:"Концепції наших архітекторів. Кожну віллу проєктуємо під її ділянку, краєвиди й родину.",w_c:"Ваша вілла — під вашу ділянку.",w_b:"Почати з дзвінка",
-i_e:"Інвестиції",i_t:"Будуйте, <em>а не просто купуйте.</em>",i1:"Нова вілла за сучасними стандартами, а не вторинка з чужими компромісами.",i2:"Ви обираєте локацію, планування й рівень якості.",i3:"Для родини, під продаж чи оренду — рахуємо проєкт до першого витраченого євро.",
+i_e:"Інвестиції",i_t:"Будуйте, <em>а не просто купуйте.</em>",i1:"Ділянка. Перевіряємо зонування, що і скільки можна збудувати, і під\u2019їзд — до покупки.",i2:"Цифри. Кошторис будівництва і цільова ціна продажу чи оренди — до першого витраченого євро.",i3:"Будівництво. Під контролем засновника, хід робіт онлайн, поки ви за кордоном.",i4:"Вихід. Продати, здати чи жити самим — готуємо віллу під обраний сценарій.",i_l:"Готових новобудов у Валенсії мало: зараз у місті 189 у продажу, у 2019 році було 784. Вілла, яку ви будуєте, — актив під вашим контролем від ділянки.",i_s:"Джерело: Обсерваторія UPV через Idealista, листопад 2026.",i_b:"Обговорити інвестиційну віллу",i_n:"Ми не обіцяємо дохідність. Показуємо розрахунок і всі припущення в ньому.",n6:"Інвестиції",
 o_e:"Засновник",o_q:"«Я в будівництві з 2003 року, з 2005-го — лише приватні будинки. У Валенсії будую так, як будував би для своєї родини.»",o_n:"Дмитро Скрипка",o_r:"Засновник Skrypka Homes",o_s1:"у будівництві з",o_s2:"збудованих об'єктів",o_s3:"лише приватні будинки",o_t:"Працюємо з архітекторами й інженерами в Іспанії та дистанційно по Європі.",
 c_e:"Контакт",c_t:"Розкажіть про свою віллу.",c_l:"Дзвінок на 20 хвилин: ваша ділянка чи ідея, бюджет і терміни. Українською, російською чи англійською.",c_a:"Офіс",c_f1:"Ім'я",c_f2:"Телефон або WhatsApp",c_f3:"Ваша ділянка чи ідея",c_b:"Надіслати у WhatsApp",pl2:"Дзвінок",pl3:"Контакт"},
 ru:{n1:"Продукты",n2:"Процесс",n3:"Портфолио",n4:"Основатель",n5:"Контакт",cta:"Записаться на звонок",
@@ -401,7 +407,7 @@ p1t:"Подбор и проверка участка",p1:"Находим уча�
 f_e:"Стройка за границей",f_t:"Три страха. Мы их снимаем.",f1q:"Чужой язык, чужие правила",f1t:"Разрешения и перевод — на нас",f1:"Ведём лицензии и мэрию и объясняем каждый документ на вашем языке.",f2q:"Подрядчики подведут",f2t:"Одна команда — одна ответственность",f2:"Проект и стройку ведём вместе, поэтому никто не перекладывает вину между архитектором и строителем.",f3q:"Не проконтролирую на расстоянии",f3t:"Видите стройку, не приезжая",f3:"Еженедельные отчёты, понятные график и бюджет и один человек, который всегда отвечает.",
 r_e:"Как мы работаем",r_t:"От участка до ключей. Одна команда.",r1t:"Участок",r1:"Поиск, юридическая и техническая проверка, первая смета.",r2t:"Проект",r2:"Концепция, планировки, визуализации, полный проект и разрешение на строительство.",r3t:"Стройка",r3:"Строительство с испанскими подрядчиками, чёткий график, еженедельные отчёты.",r4t:"Ключи",r4:"Сдача, документы и сопровождение после заселения.",
 w_e:"Портфолио",w_t:"Архитектура, которую мы проектируем.",w_l:"Концепции наших архитекторов. Каждую виллу проектируем под её участок, виды и семью.",w_c:"Ваша вилла — под ваш участок.",w_b:"Начать со звонка",
-i_e:"Инвестиции",i_t:"Стройте, <em>а не просто покупайте.</em>",i1:"Новая вилла по современным стандартам, а не вторичка с чужими компромиссами.",i2:"Вы выбираете локацию, планировку и уровень качества.",i3:"Для семьи, под продажу или аренду — считаем проект до первого потраченного евро.",
+i_e:"Инвестиции",i_t:"Стройте, <em>а не просто покупайте.</em>",i1:"Участок. Проверяем зонирование, что и сколько можно построить, и подъезд — до покупки.",i2:"Цифры. Смета строительства и целевая цена продажи или аренды — до первого потраченного евро.",i3:"Стройка. Под контролем основателя, ход работ онлайн, пока вы за границей.",i4:"Выход. Продать, сдать или жить самим — готовим виллу под выбранный сценарий.",i_l:"Готовых новостроек в Валенсии мало: сейчас в городе 189 в продаже, в 2019 году было 784. Вилла, которую вы строите, — актив под вашим контролем с участка.",i_s:"Источник: Обсерватория UPV через Idealista, ноябрь 2026.",i_b:"Обсудить инвестиционную виллу",i_n:"Мы не обещаем доходность. Показываем расчёт и все допущения в нём.",n6:"Инвестиции",
 o_e:"Основатель",o_q:"«Я в строительстве с 2003 года, с 2005-го — только частные дома. В Валенсии строю так, как строил бы для своей семьи.»",o_n:"Дмитрий Скрипка",o_r:"Основатель Skrypka Homes",o_s1:"в строительстве с",o_s2:"построенных объектов",o_s3:"только частные дома",o_t:"Работаем с архитекторами и инженерами в Испании и удалённо по Европе.",
 c_e:"Контакт",c_t:"Расскажите о своей вилле.",c_l:"Звонок на 20 минут: ваш участок или идея, бюджет и сроки. На русском, украинском или английском.",c_a:"Офис",c_f1:"Имя",c_f2:"Телефон или WhatsApp",c_f3:"Ваш участок или идея",c_b:"Отправить в WhatsApp",pl2:"Звонок",pl3:"Контакт"}
 };
